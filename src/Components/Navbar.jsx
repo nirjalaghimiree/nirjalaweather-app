@@ -4,34 +4,22 @@ function Navbar({ theme, setTheme }) {
     return (
         <nav className="navbar">
 
-            {/* Navigation */}
-            <ul className="nav-links">
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
+            <div className="nav-links">
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
+            </div>
 
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
-
-            {/* Light / Dark buttons */}
             <div className="theme-buttons">
 
                 <button
                     onClick={() => setTheme("light")}
-                    className={theme === "light" ? "active" : ""}
                 >
                     ☀️ Light
                 </button>
 
                 <button
                     onClick={() => setTheme("dark")}
-                    className={theme === "dark" ? "active" : ""}
                 >
                     🌙 Dark
                 </button>
