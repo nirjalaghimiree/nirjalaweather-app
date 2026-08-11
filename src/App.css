@@ -957,16 +957,13 @@
     grid-template-columns: 1fr;
   }
 
-
   .weather-icon {
     font-size: 55px;
   }
 
-
   .temperature {
     font-size: 38px;
   }
-
 
   .sun {
     width: 55px;
@@ -976,11 +973,17 @@
     right: 5%;
   }
 
-
   .moon {
     width: 60px;
     height: 60px;
 
     left: 5%;
   }
+}
+
+/* Fix dashboard visibility */
+.weather-container {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
 }
